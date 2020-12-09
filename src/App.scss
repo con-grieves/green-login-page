@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+
+body {
+  background-color: rgb(245, 245, 237);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginCard {
+  height: 50%;
+  background-color: white;
+  font-family: 'Gotham';     
+  padding: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .loginCard {
+    width: 90%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Logo {
+  width: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.exampleLoginText {
+  font-size: 40px;
+  padding: 0px;
+  margin-bottom: 0px;
+  color: rgb(88, 88, 88);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gettingStartedText {
+  margin-top: 10px;
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: rgb(141, 141, 141);
 }
+
+.emailText {
+  color: rgb(100, 100, 100);
+  font-size: 20px;
+}
+
+.emailInput {
+  width: 100%;
+  height: 3em;
+  border-radius: 7px;
+  border: 1.75px solid rgb(241, 241, 241);
+}
+
+.saveDeviceText {
+  margin-left: 10px;
+}
+
+.checkBox {
+  margin-top: 15px;
+}
+
+.button {
+  width: 30%;
+  height: 12%;
+  background-color: white;
+  border-radius: 7px;
+  border: 1.75px solid rgb(241, 241, 241);
+  margin: 30px 0px;
+  font-size: 17px;
+  color: rgb(100, 100, 100);
+}
+
+.button:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.emailInput:hover {
+  border-color: rgb(54, 152, 218);
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url(./fonts/gotham/Gotham-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: local('Gotham'), url(./fonts/gotham/Gotham-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamThin';
+  src: local('Gotham'), url(./fonts/gotham/Gotham-Thin.otf) format('opentype');
+} 
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: local('Gotham'), url(./fonts/gotham/Gotham-Black.otf) format('opentype');
+} 
