@@ -4,10 +4,10 @@ body {
 }
 
 .loginCard {
-  height: 50%;
+  height: 28em;
   background-color: white;
   font-family: 'Gotham';     
-  padding: 50px;
+  padding: 3.125em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
   top: 50%;
@@ -23,8 +23,14 @@ body {
   }
 }
 
+@media (max-height: 800px) {
+  .loginCard {
+    height: 90%;
+  }
+}
+
 .Logo {
-  width: 150px;
+  width: 9.375em;
 }
 
 .exampleLoginText {
@@ -35,8 +41,8 @@ body {
 }
 
 .gettingStartedText {
-  margin-top: 10px;
-  margin-bottom: 70px;
+  margin-top: 0.625em;
+  margin-bottom: 4.375em;
   font-size: 20px;
   color: rgb(141, 141, 141);
 }
@@ -47,27 +53,27 @@ body {
 }
 
 .emailInput {
-  width: 100%;
+  width: 95%;
   height: 3em;
-  border-radius: 7px;
+  border-radius: 0.4375em;
   border: 1.75px solid rgb(241, 241, 241);
 }
 
 .saveDeviceText {
-  margin-left: 10px;
+  margin-left: 0.625em;
 }
 
 .checkBox {
-  margin-top: 15px;
+  margin-top: 0.9375em;
 }
 
 .button {
   width: 30%;
-  height: 12%;
+  height: 3em;
   background-color: white;
-  border-radius: 7px;
+  border-radius: 0.5em;
   border: 1.75px solid rgb(241, 241, 241);
-  margin: 30px 0px;
+  margin: 1.875em 0px;
   font-size: 17px;
   color: rgb(100, 100, 100);
 }
@@ -99,3 +105,4 @@ body {
   font-family: 'GothamBlack';
   src: local('Gotham'), url(./fonts/gotham/Gotham-Black.otf) format('opentype');
 } 
+
